@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.logo-wrapper {
+  text-align: right;
+  img {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+  }
+}
+
+.site-title {
+  line-height: 1.5;
+  text-align: right;
+  a {
+    color: #222;
+  }
+}
