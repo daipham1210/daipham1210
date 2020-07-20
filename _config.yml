@@ -1,7 +1,10 @@
 title: Dai Pham's Blog
 logo: /assets/img/logo.jpg
 base_url: https://daipham1210.github.io
-description: Tôi xuất thân con nhà vẽ, nhưng thích đi code. Hiện tôi đang làm kĩ sư mặt tiền cho một tập đoàn tài chính ở thung lũng túi nâng silicon.
+description: I'm Dai Pham from Viet Nam. I love programming, as well as running, taking photos and learning new thing. Feel free to get in touch or take a look at my blog posts :)
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+collections:
+  posts:
+    output: true

@@ -3,6 +3,10 @@
 
 @import "jekyll-theme-minimal";
 
+.wrapper {
+  padding-top: 40px;
+}
+
 .logo-wrapper {
   text-align: right;
   img {
@@ -11,7 +15,25 @@
     border-radius: 100%;
   }
 }
-
+.header-post {
+  padding: 25px;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+.footer-post {
+  border-top: 1px solid #eee;
+  background: 0 0;
+  padding: 15px 0 25px;
+  font-size: 12px;
+  color: #bbb;
+  text-align: center;
+  p {
+    margin-bottom: 10px;
+  }
+}
 .site-title {
   line-height: 1.5;
   text-align: right;
@@ -41,12 +63,14 @@
     margin-bottom: 20px;
   }
   a {
-    font-size: 1.1rem;
     color: #333;
     text-decoration: none;
     display: block;
     margin: 8px 0;
     clear: both;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -54,6 +78,8 @@
   font-size: 16px;
   margin-right: 60px;
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
   .list-items {
     margin-bottom: 14px;
     font-size: .8em;
@@ -67,18 +93,48 @@
       line-height: 1.3em;
       margin-top: 5px;
       text-decoration: none;
-      // color: #e74c3c;
-      color: blue($color: #000000);
+      color: #e74c3c;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
 
 .post-wrapper {
-  max-width: 620px;
+  max-width: 550px;
   height: auto;
   min-height: calc(100% - 260px);
   margin: 0 auto;
   padding: 20px;
   word-wrap: break-word;
   hyphens: auto;
+  font-size: 16px;
+  p {
+    line-height: 180%;
+    font-weight: 400;
+    text-align: justify;
+    margin: 24px 0;
+    color: #000;
+  }
+  .post-title {
+    font-family: monospace;
+    &::before {
+      content: "#";
+      color: #CCC;
+      margin-left: -20px;
+      font-weight: normal;
+    }
+  }
+  .tag {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 5px;
+    background: #eee;
+    text-decoration: none;
+    color: #e74c3c;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

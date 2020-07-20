@@ -7,7 +7,9 @@ layout: default
     <div class="logo-wrapper">
       <img src="{{site.logo}}" alt="Logo" />
     </div>
-    <h1 class="site-title"><a href="{{ site.base_url }}">{{ site.title }}</a></h1>
+    <h1 class="site-title">
+      <a href="{{ site.base_url }}">{{ site.title }}</a>
+    </h1>
 
     <p class="description">{{ site.description }}</p>
     
