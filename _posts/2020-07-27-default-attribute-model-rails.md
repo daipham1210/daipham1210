@@ -8,7 +8,9 @@ tags: ruby rails
 In Rails, migrations let you define default attribute values by passing a :default option to the column method. But in some cases, you may need to set the default in the application. There are:
 
 * When the default can be easily be changed
+  
 * When the default can be dynamic
+
 * When the default values are part of your domain logic and you want to kept together with the rest of the domain logic of your application
 
 
