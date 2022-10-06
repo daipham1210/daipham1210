@@ -21,7 +21,7 @@ To verify if token is valid from the server side, we need save all the tokens th
 This solutions's drawback is it make the authentication verification slow. We have to query the blacklist on every API call. Therefore, we will move to a new way to handle this situation.
 
 ## 3. Use a refresh token
-In this solution, when the user logs in, the server issues a both short-lived JWT (the access token), and a long-lived refresh token. Refresh token will be store on the database to manage  When a user is granted access, both of these tokens are sent to the client. We also create a JWT refresh API endpoint that the client can call before the expiry of the JWT.
+In this solution, when the user logs in, the server issues a both short-lived JWT (the access token), and a long-lived refresh token. Refresh token will be store on the database to manage its state. When a user is granted access, both of these tokens are sent to the client. We also create a JWT refresh API endpoint that the client can call before the expiry of the JWT.
 
 When the user attempts to access a resource, they send the JWT access token along with every request. When the JWT expires, the client then uses the refresh token to request a new JWT and a new refresh token. This process is known as refresh token rotation.
 
