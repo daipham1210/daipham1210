@@ -14,12 +14,8 @@ layout: default
     <p class="description">{{ site.description }}</p>
     
     <div class="header-top">
-      <a href="#">RSS</a>
-      <a href="#">Facebook</a>
-      <a href="#">Github</a>
-      <a href="#">Một số blog hay nên đọc</a>
-      <a href="#">Sách mình đang đọc</a>
-      <a href="#">Buy me a coffee</a>
+      <a href="https://www.facebook.com/vagabond257/">Facebook</a>
+      <a href="https://github.com/daipham1210">Github</a>
     </div>
   </header>
 
